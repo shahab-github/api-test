@@ -1,4 +1,4 @@
-# api-test
+## api-test
 
-# Run the app using command
-` uvicorn main:app --reload `
+## Run the app using command
+`# uvicorn main:app --reload `
