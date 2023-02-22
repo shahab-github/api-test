@@ -1,0 +1,28 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "myinternal",
+        "creationTimestamp": null,
+        "labels": {
+            "app": "myinternal"
+        }
+    },
+    "spec": {
+        "ports": [
+            {
+                "name": "80",
+                "protocol": "TCP",
+                "port": 80,
+                "targetPort": 80
+            }
+        ],
+        "selector": {
+            "app": "myinternal"
+        },
+        "type": "ClusterIP"
+    },
+    "status": {
+        "loadBalancer": {}
+    }
+}
